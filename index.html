@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      window.addEventListener("load", function () {
+        const canvas = document.getElementById("my-canvas");
+        const context = canvas.getContext("2d");
+        context.fillRect(100, 100, 500, 100);
+        context.fillRect(200, 5, 300, 100);
+        context.beginPath();
+        context.arc(250, 220, 30, 0, Math.PI * 2);
+        context.fill();
+        context.beginPath();
+        context.arc(450, 220, 30, 0, Math.PI * 2);
+        context.fill();
+      });
+    </script>
+  </head>
+  <body>
+    <canvas id="my-canvas" width="1000" height="1000"></canvas>
+  </body>
+</html>
